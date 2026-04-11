@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Neural Chat</title>
+    <link rel="stylesheet" href="./ii.css">
+</head>
+<body>
+    <button class="mobile-menu-btn" onclick="toggleSidebar()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
+
+    <div class="overlay" onclick="toggleSidebar()"></div>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="new-chat-btn" onclick="newChat()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                Новый чат
+            </button>
+        </div>
+        
+        <div class="history-title">История</div>
+        <div class="history-list" id="historyList"></div>
+    </aside>
+
+    <div class="main-content">
+        <main class="site-main">
+            <section>
+                <h1>AI Neural Chat</h1>
+                <h3>Модель GPT-4 • Онлайн</h3>
+                
+                <div id="natija">
+                    <div class="empty-state">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                        <p>Начните новый разговор</p>
+                    </div>
+                </div>
+                
+                <form class="js-form">
+                    <div class="input-wrapper">
+                        <textarea placeholder="Xabarni yozing...." class="savol" id="savol" aria-label="Xabarni yozing...." required onkeypress="handleKeyPress(event)" rows="1"></textarea>
+                    </div>
+                    <button type="button" class="" onclick="Yubor()">Yuborish</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="./ii.js"></script>
+</body>
+</html>

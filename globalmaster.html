@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СтройМастер - Строительная Компания</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-hard-hat"></i>
+                <span>СтройМастер</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#game">Игра</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><button class="theme-toggle" aria-label="Переключить тему">
+                    <i class="fas fa-moon"></i>
+                </button></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Строим <span>Будущее</span></h1>
+            <p>Профессиональное строительство и ремонт любой сложности. Мы создаем пространства, в которых хочется жить и работать.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Начать проект</a>
+                <a href="#projects" class="btn btn-outline">Наши работы</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <i class="fas fa-building"></i>
+                <span class="stat-number" data-target="250">0</span>
+                <span class="stat-label">Построено объектов</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <span class="stat-number" data-target="50">0</span>
+                <span class="stat-label">Специалистов</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-award"></i>
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-label">Лет опыта</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-smile"></i>
+                <span class="stat-number" data-target="98">0</span>
+                <span class="stat-label">% Довольных клиентов</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-title reveal">
+            <h2>О Нашей Компании</h2>
+            <p>Мы строим не просто здания — мы создаем пространства для жизни</p>
+        </div>
+        <div class="about-content reveal">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800" alt="Строительная площадка">
+            </div>
+            <div class="about-text">
+                <h3>Надежный партнер в строительстве с 2009 года</h3>
+                <p>СтройМастер — это команда профессионалов, объединенных общей целью: создавать качественное жилье и коммерческие объекты, отвечающие самым высоким стандартам.</p>
+                <p>Мы используем современные технологии строительства и только проверенные материалы от ведущих производителей. Каждый проект — это индивидуальный подход и внимание к деталям.</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-check-circle"></i> Полный цикл строительных работ</li>
+                    <li><i class="fas fa-check-circle"></i> Строгое соблюдение сроков</li>
+                    <li><i class="fas fa-check-circle"></i> Прозрачное ценообразование</li>
+                    <li><i class="fas fa-check-circle"></i> Гарантия на все виды работ</li>
+                </ul>
+                <a href="#contact" class="btn" style="margin-top: 2rem;">Узнать больше</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-title reveal">
+            <h2>Наши Услуги</h2>
+            <p>Комплексные решения для строительства и ремонта</p>
+        </div>
+        <div class="services-grid reveal">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3>Строительство домов</h3>
+                <p>Проектирование и строительство частных домов, коттеджей и вилл под ключ с учетом всех ваших пожеланий.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>Коммерческое строительство</h3>
+                <p>Возведение офисных зданий, торговых центров, складов и производственных помещений.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-paint-roller"></i>
+                </div>
+                <h3>Ремонт и отделка</h3>
+                <p>Капитальный и косметический ремонт квартир, офисов и коммерческих помещений любой сложности.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-drafting-compass"></i>
+                </div>
+                <h3>Проектирование</h3>
+                <p>Разработка архитектурных и инженерных проектов с полным пакетом документации.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-hammer"></i>
+                </div>
+                <h3>Реконструкция</h3>
+                <p>Модернизация и реконструкция существующих зданий с усилением конструкций.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Инженерные системы</h3>
+                <p>Монтаж отопления, вентиляции, водоснабжения и электрики в зданиях.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-title reveal">
+            <h2>Наши Проекты</h2>
+            <p>Реализованные объекты, которыми мы гордимся</p>
+        </div>
+        <div class="projects-filter reveal">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="residential">Жилые</button>
+            <button class="filter-btn" data-filter="commercial">Коммерческие</button>
+            <button class="filter-btn" data-filter="industrial">Промышленные</button>
+        </div>
+        <div class="projects-grid reveal">
+            <div class="project-card" data-category="residential">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600" alt="Современный дом">
+                <div class="project-overlay">
+                    <h3>Современный коттедж</h3>
+                    <p>Жилой проект • 2023</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="commercial">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="Бизнес центр">
+                <div class="project-overlay">
+                    <h3>Бизнес-центр "Орион"</h3>
+                    <p>Коммерческий проект • 2022</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="industrial">
+                <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600" alt="Склад">
+                <div class="project-overlay">
+                    <h3>Логистический комплекс</h3>
+                    <p>Промышленный проект • 2023</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="residential">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="Таунхаус">
+                <div class="project-overlay">
+                    <h3>Клубный таунхаус</h3>
+                    <p>Жилой проект • 2022</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="commercial">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600" alt="Торговый центр">
+                <div class="project-overlay">
+                    <h3>Торговый центр "Галерея"</h3>
+                    <p>Коммерческий проект • 2021</p>
+                </div>
+            </div>
+            <div class="project-card" data-category="industrial">
+                <img src="./bwz_ceha-_7_.jpg" alt="Завод">
+                <div class="project-overlay">
+                    <h3>Производственный цех</h3>
+                    <p>Промышленный проект • 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-title reveal">
+            <h2>Отзывы Клиентов</h2>
+            <p>Что говорят о нас наши заказчики</p>
+        </div>
+        <div class="testimonials-container reveal">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Клиент" class="testimonial-img">
+                    <div class="testimonial-info">
+                        <h4>Александр Петров</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"СтройМастер построил наш семейный дом за 8 месяцев, как и обещали. Качество работ на высоте, все материалы премиум-класса. Особенно понравился индивидуальный подход к дизайну."</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" alt="Клиент" class="testimonial-img">
+                    <div class="testimonial-info">
+                        <h4>Елена Смирнова</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Заказывали ремонт офиса площадью 500 м². Работа выполнена безупречно, сотрудники работали аккуратно и чисто. Цена оказалась ниже, чем у конкурентов."</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150" alt="Клиент" class="testimonial-img">
+                    <div class="testimonial-info">
+                        <h4>Михаил Иванов</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Профессиональная команда! Построили складской комплекс в срок. Все документы, разрешения — всё оформили сами. Рекомендую как надежного подрядчика."</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-title reveal">
+            <h2>Свяжитесь с Нами</h2>
+            <p>Готовы обсудить ваш проект? Оставьте заявку!</p>
+        </div>
+        <div class="contact-content reveal">
+            <div class="contact-info">
+                <h3>Контактная информация</h3>
+                <ul class="contact-details">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>г. Москва, ул. Строителей, 25, офис 301</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (495) 123-45-67</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@stroymaster.ru</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Пн-Пт: 9:00 - 18:00</span>
+                    </li>
+                </ul>
+                <h3>Следите за нами</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" required placeholder="Опишите ваш проект..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Отправить заявку</button>
+            </form>
+        </div>
+    </section>

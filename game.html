@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СтройМагазин - Симулятор</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+
+<div class="game-container">
+    <div class="header">
+        <button class="button button-primary">
+            <a href="./index.html" class="btn-link">назад</a>
+        </button>
+        <h1>🏗️ СтройМагазин</h1>
+        <p>Управляй своим строительным магазином и стань магнатом!</p>
+    </div>
+
+    <div class="stats-bar">
+        <div class="stat-card">
+            <div class="stat-label">💰 Баланс</div>
+            <div class="stat-value money" id="money">1000 ₽</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">📦 Товаров на складе</div>
+            <div class="stat-value stock" id="totalStock">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">👥 Клиентов сегодня</div>
+            <div class="stat-value customers" id="customersToday">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">⭐ Уровень</div>
+            <div class="stat-value level" id="level">1</div>
+        </div>
+    </div>
+
+    <div class="main-grid">
+        <div class="panel">
+            <h2>📦 Склад</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Товары генерируются JS -->
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>👥 Очередь клиентов</h2>
+            <div class="customer-queue" id="customerQueue">
+                <p style="color: #666; text-align: center; padding: 40px;">Клиенты появятся скоро...</p>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>⚡ Улучшения</h2>
+            <div class="upgrades-list" id="upgradesList">
+                <!-- Улучшения генерируются JS -->
+            </div>
+        </div>
+    </div>
+
+    <div class="panel log-panel">
+        <h2>📝 Журнал событий</h2>
+        <div id="gameLog"></div>
+    </div>
+</div>
+
+<div class="modal" id="welcomeModal">
+    <div class="modal-content">
+        <h2>🏗️ Добро пожаловать!</h2>
+        <p>Ты только что открыл свой строительный магазин! Покупай товары, продавай клиентам и развивай бизнес.</p>
+        <button class="btn" onclick="closeModal()">Начать игру!</button>
+    </div>
+</div>
+
+<div class="level-up-animation" id="levelUpAnim">⭐ LEVEL UP! ⭐</div>
+
+<script src="./game.js"></script>
+
+</body>
+</html>
