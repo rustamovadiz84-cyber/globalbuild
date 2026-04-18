@@ -663,8 +663,8 @@
         }
 
         .map-point[data-country="usa"] {
-            top: 35%;
-            left: 25%;
+            top: 45%;
+            left: 17%;
         }
 
         .map-point[data-country="turkey"] {

@@ -1,10 +1,10 @@
 // Exchange rates (simulated real-time data)
 const exchangeRates = {
-  USD: { RUB: 92.5, EUR: 0.92, CNY: 7.24, TRY: 32.1 },
-  EUR: { RUB: 100.2, USD: 1.09, CNY: 7.85, TRY: 34.8 },
-  CNY: { RUB: 12.75, USD: 0.14, EUR: 0.13, TRY: 4.43 },
-  TRY: { RUB: 2.88, USD: 0.031, EUR: 0.029, CNY: 0.23 },
-  RUB: { USD: 0.0108, EUR: 0.01, CNY: 0.078, TRY: 0.35 },
+  USD: { RUB: 92.5, EUR: 0.92, CNY: 7.24, TRY: 32.1, UZB: 0.000082 },
+  EUR: { RUB: 100.2, USD: 1.09, CNY: 7.85, TRY: 34.8, UZB: 0.000070 },
+  CNY: { RUB: 12.75, USD: 0.14, EUR: 0.13, TRY: 4.43, UZB: 0.00057 },
+  TRY: { RUB: 2.88, USD: 0.031, EUR: 0.029, CNY: 0.23, UZB: 0.0037 },
+  RUB: { USD: 0.0108, EUR: 0.01, CNY: 0.078, TRY: 0.35, UZB: 0.006 },
   UZB: { USD: 0.000082, EUR: 0.000071, CNY: 0.00057, TRY: 0.0036, RUB: 0.006 },
 };
 
